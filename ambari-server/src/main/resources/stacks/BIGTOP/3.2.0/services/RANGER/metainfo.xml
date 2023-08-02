@@ -166,13 +166,13 @@
           <osFamily>debian7,debian9,ubuntu22,ubuntu14,ubuntu16,ubuntu18</osFamily>
           <packages>
             <package>
-              <name>ranger-${stack_version}-admin</name>
+              <name>ranger-2.4.0-admin</name>
             </package>
             <package>
-              <name>ranger-${stack_version}-usersync</name>
+              <name>ranger-2.4.0-usersync</name>
             </package>
             <package>
-              <name>ranger-${stack_version}-tagsync</name>
+              <name>ranger-2.4.0-tagsync</name>
               <condition>should_install_ranger_tagsync</condition>
             </package>
 <!--            <package>-->

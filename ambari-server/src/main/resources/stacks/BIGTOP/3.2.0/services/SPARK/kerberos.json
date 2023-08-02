@@ -29,7 +29,7 @@
         {
           "name": "atlas_kafka",
           "principal": {
-            "value": "spark_atlas@${realm}",
+            "value": "spark_atlas_${principal_suffix}@${realm}",
             "type": "user",
             "configuration": "spark-atlas-application-properties-override/atlas.jaas.KafkaClient.option.principal"
           },

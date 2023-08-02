@@ -63,7 +63,7 @@ public class OSFamilyTest {
    Set<String> actual_oslist =  os_family.os_list();
    Set<String> expected_oslist = new HashSet<>(Arrays.asList(
      "redhat6", "oraclelinux5", "suse11", "fedora6", "opensuse11",
-     "centos6", "fedora5", "centos5", "ubuntu12", "redhat5", "sles11",
+     "centos6", "fedora5", "centos5", "ubuntu22", "redhat5", "sles11",
      "oraclelinux6", "debian12", "sled11", "win2012server6", "win2012serverr26", "win2008serverr26", "win2008server6"
    ));
 
@@ -78,7 +78,7 @@ public class OSFamilyTest {
     expected_map.put("distro", "ubuntu");
     expected_map.put("versions", "12");
 
-    String test_value = "ubuntu12";
+    String test_value = "ubuntu22";
 
     // trying to call private method
     Class[] parse_os_args = {
@@ -103,18 +103,18 @@ public class OSFamilyTest {
   @Test
   public void testFindTypes() throws Exception{
     Set<String> expected_set = new HashSet<>(Arrays.asList(
-      "ubuntu12",
+      "ubuntu22",
       "debian12"
     ));
 
-    Set<String> actual_set = os_family.findTypes("ubuntu12");
+    Set<String> actual_set = os_family.findTypes("ubuntu22");
     Assert.assertNotNull(actual_set);
     Assert.assertEquals(expected_set, actual_set);
   }
 
   @Test
   public void testFind() throws Exception{
-    String expected_result = "ubuntu12";
+    String expected_result = "ubuntu22";
     String actual_result = os_family.find("debian12");
 
     Assert.assertNotNull(actual_result);

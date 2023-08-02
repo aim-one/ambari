@@ -611,7 +611,7 @@ class TestBootstrap:#(TestCase):
   def test_checkSudoPackageUbuntu(self, write_mock, run_mock, init_mock,
                                   is_redhat_family, is_ubuntu_family, is_suse_family):
     shared_state = SharedState("root", "123", "sshkey_file", "scriptDir", "bootdir",
-                               "setupAgentFile", "ambariServer", "ubuntu12",
+                               "setupAgentFile", "ambariServer", "ubuntu22",
                                None, "8440", "root")
     is_redhat_family.return_value = False
     is_ubuntu_family.return_value = True

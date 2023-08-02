@@ -438,14 +438,14 @@ def main(argv):
       Omitting this implies the entire service should be upgraded")
 
   parser.add_option('--os', action='store_true', dest='os', help="Add OS data with options --os-family, --os-package-version")
-  parser.add_option('--os-family', dest='os_family', help="The operating system: i.e redhat7, debian7, ubuntu12, ubuntu14, suse11, suse12")
+  parser.add_option('--os-family', dest='os_family', help="The operating system: i.e redhat7, debian7, ubuntu22, ubuntu14, suse11, suse12")
   parser.add_option('--os-package-version', dest='os_package_version',
     help="The package version to use for the OS")
 
   parser.add_option('--repo', action='store_true', dest='repo',
     help="Add repository data with options: --repo-os, --repo-url, --repo-id, --repo-name, --repo-unique")
   parser.add_option('--repo-os', dest='repo_os',
-    help="The operating system type: i.e. redhat6, redhat7, debian7, debian9, ubuntu12, ubuntu14, ubuntu16, suse11, suse12")
+    help="The operating system type: i.e. redhat6, redhat7, debian7, debian9, ubuntu22, ubuntu14, ubuntu16, suse11, suse12")
   parser.add_option('--repo-url', dest='repo_url',
     help="The base url for the repository data")
   parser.add_option('--repo-unique', dest='unique', type='choice', choices=['true', 'false'],

@@ -30,7 +30,7 @@ then
   LATEST_URL="$2"
   C5URL="${C6URL/centos6/centos5}"
   S11URL="${C6URL/centos6/suse11}"
-  U12URL="${C6URL/centos6/ubuntu12}"
+  U12URL="${C6URL/centos6/ubuntu22}"
 
   STACKS_DIR=$3/src/main/resources/stacks/HDP/
   HDPREPO_DIR=$STACKS_DIR/${VERSION}/repos
@@ -47,7 +47,7 @@ then
   echo "Setting suse11 stack url to '$S11URL'"
   sed  "s;REPLACE_WITH_SUSE11_URL;$S11URL;" ${HDPREPO_DIR}/repoinfo.xml >  ${HDPREPO_DIR}/repoinfo.xml.tmp; mv ${HDPREPO_DIR}/repoinfo.xml.tmp ${HDPREPO_DIR}/repoinfo.xml
 
-  echo "Setting ubuntu12 stack url to '$U12URL'"
+  echo "Setting ubuntu22 stack url to '$U12URL'"
   sed  "s;REPLACE_WITH_UBUNTU12_URL;$U12URL;" ${HDPREPO_DIR}/repoinfo.xml >  ${HDPREPO_DIR}/repoinfo.xml.tmp; mv ${HDPREPO_DIR}/repoinfo.xml.tmp ${HDPREPO_DIR}/repoinfo.xml
 
    

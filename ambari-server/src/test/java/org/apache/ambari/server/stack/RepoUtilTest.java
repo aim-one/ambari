@@ -38,7 +38,7 @@ import com.google.common.collect.Multimaps;
 
 public class RepoUtilTest {
 
-  private static final List<String> OPERATING_SYSTEMS = ImmutableList.of("redhat6", "sles11", "ubuntu12");
+  private static final List<String> OPERATING_SYSTEMS = ImmutableList.of("redhat6", "sles11", "ubuntu22");
 
 
   @Test public void testAddServiceReposToOperatingSystemEntities_SimpleCase() {

@@ -154,6 +154,9 @@
             <package>
               <name>hadoop_${stack_version}-hdfs</name>
             </package>
+            <package>
+              <name>ranger_${stack_version}-yarn-plugin</name>
+            </package>
           </packages>
         </osSpecific>
       </osSpecifics>
@@ -193,6 +196,10 @@
       <widgetsFileName>YARN_widgets.json</widgetsFileName>
       <metricsFileName>YARN_metrics.json</metricsFileName>
       <themes>
+        <theme>
+          <fileName>theme.json</fileName>
+          <default>true</default>
+        </theme>
         <theme>
           <fileName>directories.json</fileName>
           <default>true</default>
@@ -331,6 +338,10 @@
 
       <themes-dir>themes-mapred</themes-dir>
       <themes>
+        <theme>
+          <fileName>theme.json</fileName>
+          <default>true</default>
+        </theme>
         <theme>
           <fileName>directories.json</fileName>
           <default>true</default>

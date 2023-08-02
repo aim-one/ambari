@@ -129,6 +129,13 @@
                 <scriptType>PYTHON</scriptType>
               </commandScript>
             </customCommand>
+            <customCommand>
+              <name>RECONFIGURE</name>
+              <commandScript>
+                <script>scripts/namenode.py</script>
+                <scriptType>PYTHON</scriptType>
+              </commandScript>
+            </customCommand>
           </customCommands>
         </component>
 
@@ -297,6 +304,9 @@
             <package>
               <name>libtirpc-devel</name>
             </package>
+            <package>
+              <name>ranger_${stack_version}-hdfs-plugin</name>
+            </package>
           </packages>
         </osSpecific>
       </osSpecifics>
@@ -331,6 +341,10 @@
       </quickLinksConfigurations>
 
       <themes>
+        <theme>
+          <fileName>theme.json</fileName>
+          <default>true</default>
+        </theme>
         <theme>
           <fileName>directories.json</fileName>
           <default>true</default>
